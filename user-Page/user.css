@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+/* NOTE : 
+For BooksScreen and userScreen Shares Same Css File 
+*/
+
+* {
+  --success-color:white;
+  --error-color: red;
+
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Styling for form Containers area  */
+
+label {
+  width: 240px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+}
+
+.user-container {
+  margin-left: 175px;
+  margin-top: 100px;
+}
+input {
+  background-color:  #c7c6c6ee;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 60%;
+  font-family: "Ubuntu", sans-serif;
+  border: 1px solid ;
+  font-weight: bold;
+  color: black;
+}
+
+.formdivs {
+  padding: 8px;
+  position: relative;
+}
+
+/* For Submit Button */
+.userAreBtn {
+  padding: 12px;
+  margin-left: 700px;
+  border: 2px solid black;
+  outline: none;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 15%;
+  margin-top: 12px;
+  border-color: black;
+  color: black;
+  cursor: pointer;
+  background-color:  #c7c6c6ee;
+}
+.userAreBtn:hover {
+  background-color: #868686ee;
+  color:black;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+#updatebtn {
+  display: none;
+  cursor: pointer;
+}
+
+/* Styling for User Out Data Table  */
+
+.user-table {
+  font-family: "Ubuntu", "sans-serif";
+  margin-top: 50px;
+  padding-left: 425px;
+}
+
+table {
+  border-collapse: collapse;
+  width: fit-content;
+}
+tr th {
+  background-color: #868686ee;
+}
+th {
+  color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+td {
+  color: white;
+}
+td,
+th {
+  padding: 15px;
+}
+
+tr:hover{
+  background-color:  #868686ee;
+}
+
+/* Styling Edit and Delete Button */
+
+.editbtn {
+  padding: 3px 15px 3px 15px;
+  border: 1px solid black;
+  border-color: black;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+.editbtn:hover {
+  background: black;
+  color: white;
+  transition: 0.2s ease-in;
+  border: 0;
+}
+.deletebtn {
+  padding: 3px 15px 3px 15px;
+  border-color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+.deletebtn:hover {
+  background: black;
+  color: white;
+  transition: 0.2s ease-in;
+  border: 0;
+}
+
+/* Styling the Error Message area */
+
+small {
+  padding-left: 245px;
+  font-size: 10px;
+  padding-top: 2px;
+}
+
+.formdivs small {
+  color: var(--error-color);
+  position: absolute;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.formdivs.error small {
+  visibility: visible;
+  transition: 0.3s;
+}
+
+.formdivs.success small {
+  visibility: visible;
+  color: var(--success-color);
+  transition: 0.3s;
+}
+
+/* .formdivs.success input {
+  border-color: 1px solid var(--success-color);
+  transition: 0.2s;
+}
+
+.formdivs.error input {
+  border-color:1px solid var(--error-color);
+  transition: 0.2s;
+} */
+
+
+
+

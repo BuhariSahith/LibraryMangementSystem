@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="issuedbooks.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>LMS-IssuedBooks</title>
+</head>
+
+<body>
+    <!-- NAV LINKS AND ICONS -->
+  <ul>
+    <li>
+      <a  href="../index.html"id="leftside">LMS</a>
+    </li>
+    <li>
+      <a href="../user-Page/user.html" class="links">
+        <i class="fas fa-users"></i>
+      </a>
+    </li>
+    <li>
+      <a href="../book-Page/books.html" class="links">
+        <i class="fas fa-book-open"></i>
+      </a>
+    </li>
+    <li>
+      <a href="../Issued-Book-Page/issuedbooks.html" target="_self" class="links">
+        <i class="fas fa-book-reader"></i>
+      </a>
+    </li>
+    <li>
+      <a href="../welcome-Page/welcome.html" class="links">
+        <i class="fas fa-home"></i>
+      </a>
+    </li>
+  </ul>
+
+  <!-- FOR USER SELECTION LIST -->
+
+  <div class="dropdown UserselectionArea">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="userDropDown" data-toggle="dropdown"
+      aria-expanded="false">
+      users
+    </button>
+    <div id="userDiv" class="dropdown-menu" aria-labelledby="userDropDown"></div>
+  </div>
+
+  <!-- FOR BOOK SELECTION LIST  -->
+  <div class="dropdown bookSelectionArea">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="bookDropDown" data-toggle="dropdown"
+      aria-expanded="false">
+      Books
+    </button>
+    <div id="booksDiv" class="dropdown-menu" aria-labelledby="bookDropDown"></div>
+  </div>
+
+  <!-- TEXT AREA -->
+  <input type="text" id="count" />
+  <!-- BUTTON AREA -->
+  <button id="issuedBooksBtn">Issued Books</button>
+  <!-- ERROR MSG AREA -->
+  <small id="issuedbookErrorMsg"></small>
+
+
+  <!-- For Table Part  -->
+  <div class="user-table">
+    <table>
+      <thead>
+        <tr class="headeRow">
+          <th>Id</th>
+          <th>User Name</th>
+          <th>Book Name</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="issuedbooks.js"></script>
+</body>
+
+</html>

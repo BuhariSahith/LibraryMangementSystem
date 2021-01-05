@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="books.css  " />
+  <link rel="stylesheet" href="../style.css">
+  <title>LMS-Books</title>
+</head>
+
+<body>
+  <!-- Link for pages -->
+   <!-- NAV LINKS AND ICONS -->
+  <ul>
+    <li>
+      <a  href="../index.html" id="leftside">LMS</a>
+    </li>
+    <li>
+      <a href="../user-Page/user.html" class="links">
+        <i class="fas fa-users"></i>
+      </a>
+    </li>
+    <li>
+      <a href="../book-Page/books.html" class="links">
+        <i class="fas fa-book-open"></i>
+      </a>
+    </li>
+    <li>
+      <a href="../Issued-Book-Page/issuedbooks.html" target="_self" class="links">
+        <i class="fas fa-book-reader"></i>
+      </a>
+    </li>
+    <li>
+      <a href="../welcome-Page/welcome.html" class="links">
+        <i class="fas fa-home"></i>
+      </a>
+    </li>
+  </ul>
+  <!-- Form Area -->
+  <div class="user-container">
+    <form class="form" id="form">
+      <div class="formdivs">
+        <label for="ISBN">ISBN</label>
+        <input type="text" class="forminput" id="isbnNumber" placeholder="ISBN number" />
+        <br />
+        <small>Error Message</small>
+      </div>
+      <div class="formdivs">
+        <label for="BookName">BookName</label>
+        <input type="text" class="forminput" id="bookName" placeholder="BookName" />
+        <br />
+        <small>Error Message</small>
+      </div>
+      <div class="formdivs">
+        <label for="Author">Author</label>
+        <input type="text" class="forminput" id="author" placeholder="author" />
+        <br />
+        <small>Error Message</small>
+      </div>
+      <div class="formdivs">
+        <label for="Publisher">Publisher</label>
+        <input type="text" class="forminput" id="publisher" placeholder="Publisher" />
+        <br />
+        <small>Error Message</small>
+      </div>
+      <div class="formdivs">
+        <label for="Quantity">Quantity</label>
+        <input type="text" class="forminput" id="quantity" placeholder="Quantity" />
+        <br />
+        <small>Error Message</small>
+      </div>
+    </form>
+  </div>
+  <!-- Button Area  -->
+  <button type="submit" class="userAreBtn" id="submitbtn">Add Books</button>
+  <button type="submit" class="userAreBtn" id=updatebtn>Update Books</button>
+
+  <!-- Table Area -->
+  <div class="user-table">
+    <table class="outputdata">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>ISBN</th>
+          <th>Book Name</th>
+          <th>Author</th>
+          <th>Publisher</th>
+          <th>Quantity</th>
+          <th>Issued Books</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="books.js"></script>
+</body>
+
+</html>

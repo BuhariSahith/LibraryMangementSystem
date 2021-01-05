@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>LMS-HOME</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+</head>
+
+<body>
+    <header id="btn">LMS</header>
+    <nav id="nav">
+    <!-- <ul>
+        <li>
+            <a href="../user-Page/user.html" class="links">Sign-in / Login </a>
+        </li>
+        <li>
+            <a href="../book-Page/books.html" class="links">For Librarian
+                
+            </a>
+        </li>
+        <li>
+            <a href="../Issued-Book-Page/issuedbooks.html" target="_self" class="links">Lend Book
+               
+            </a>
+        </li>
+        <li>
+            <a href="../welcome-Page/welcome.html" class="links">Home 
+                
+            </a>
+        </li> -->
+        <!-- ☰ -->
+    </ul>
+    </nav>
+    <script>
+
+      const btn = document.getElementById("btn");
+         const nav = document.getElementById("nav");
+
+        btn.addEventListener("click", () => {
+            nav.classList.toggle("active");
+            btn.classList.toggle("active");
+        });
+
+        window.addEventListener("dblclick",() => {
+
+            btn.classList.toggle("activereverse");
+            nav.classList.toggle('activereverse');
+        })
+        /*The classList property returns the class name(s) of an element, as a DOMTokenList object.
+        This property is useful to add, remove and toggle CSS classes on an element.
+        The classList property is read-only, however, you can modify it by using the add() and remove() methods.
+        
+        Toggle between adding and removing a class name from an element with JavaScript.
+        */
+
+
+
+    </script>
+</body>
+
+</html>

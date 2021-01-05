@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  /* background-color: #ebecec; */
+}
+
+.UserselectionArea {
+  display: inline;
+  margin-left: 300px;
+  margin-top: 500px;
+
+}
+.bookSelectionArea {
+  display: inline;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin: 5px;
+  width: 25%;
+  border-radius: 3px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+input {
+  background-color:  #c7c6c6ee;
+}
+
+#issuedBooksBtn {
+  padding: 5px;
+  margin: 35px;
+  border: 2px solid black;
+  border-color: black;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: auto;
+  background-color: #c7c6c6ee ;
+}
+
+#issuedBooksBtn:hover {
+  background:  #868686ee;
+  transition: 0.2s;
+  color:black;
+}
+
+/* FOR TABLE  */
+
+ .user-table {
+  font-family: "Ubuntu", "sans-serif";
+  margin-top: 50px;
+  width: fit-content;
+  margin-left: 500px;
+}
+
+.headeRow{
+  background-color: #868686ee;
+  color:  black
+  /* border-top: 1px solid grey;
+  border-bottom: 1px solid grey; */
+}
+
+td,
+th {
+  padding: 15px;
+}
+
+/* tr:nth-child(even) {
+  background-color: #fdfbfbee;
+}  */
+
+table {
+  border-collapse: collapse;
+  width: fit-content;
+} 
+tbody tr:hover {
+  background-color:  #868686ee;
+  transition: 0.2s;
+}
+
+
+/* ERROR MSG  */
+#issuedbookErrorMsg{
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 150px;
+  text-align: center;
+  display: block;
+  transition: 0.3s;
+}
+
