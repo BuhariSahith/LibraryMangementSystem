@@ -52,10 +52,10 @@ li a {
   /* top: 50px; */
   /* left: 20px; */
 }
-/* #leftside:hover {
+#leftside:hover {
   background-color: black;
   color: white;
-} */
+}
 
 h1 {
   font-family: "Ubuntu", sans-serif;
