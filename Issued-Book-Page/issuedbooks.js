@@ -75,7 +75,6 @@ function validatingTheQuantity(event) {
       book: selectingBook,
       quantity: enteredQuantity,
     };
-
     let issuedBookDetails = getIssuedBookStorage();
     issuedBookDetails.push(obj);
 
