@@ -13,7 +13,6 @@ const form = document.querySelector('form'),
  dynmaicId  =0;
 //  let dynmaicId = Math.floor(Math.random() * 10);
 
-
  function init() {
     let bookList = getStorage();
     insertUserTable(bookList);
@@ -174,6 +173,7 @@ function getStorage() {
         return JSON.parse(bookList);
     }
 }
+
 
 // VALIDATIONS PART 
 
